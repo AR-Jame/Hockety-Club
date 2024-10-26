@@ -3,9 +3,534 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hockey's Club</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/da16072240.js" crossorigin="anonymous"></script>
+    <style>
+        .text-main{
+            font-family: Manrope;
+        }
+        .headline{
+            font-weight: 900;
+            font-size: 2.25rem;
+        }
+        .headline-p{
+            color: rgba(0, 0, 0, 0.551);
+        }
+        hr{
+            border-top: 2px dashed rgba(0, 0, 0, 0.262);
+        }
+    </style>
 </head>
-<body>
-    
+<body class="text-main">
+<!-- Nav and Hero section -->
+    <header class="md:mx-[10%]">
+        <nav class="sticky top-0 z-10 bg-white">
+            <div class="navbar">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content z-[1] mt-3 w-52 p-2">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class=" text-2xl md:text-4xl font-semibold">Hockey<span class="text-[#FF4240]">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu-horizontal px-1 ">
+                    <li class="px-2 hover:text-[#FF4240] font-medium cursor-pointer"><a>Home</a></li>
+                    <li class="px-2 hover:text-[#FF4240] font-medium cursor-pointer"><a>About</a></li>
+                    <li class="px-2 hover:text-[#FF4240] font-medium cursor-pointer"><a>Pages</a></li>
+                    <li class="px-2 hover:text-[#FF4240] font-medium cursor-pointer"><a>Blog</a></li>
+                    <li class="px-2 hover:text-[#FF4240] font-medium cursor-pointer"><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <i class="fa-solid fa-magnifying-glass px-3 cursor-pointer"></i>
+                  <a class="btn bg-[#FF4240] hover:bg-[#FF4240] text-white ">Get Ticket</a>
+                </div>
+              </div>
+        </nav>
+        <section class="my-16 relative">
+            <div>
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full">
+                      <img
+                        src="./Images/1.png"
+                        class="max-h-[722px] w-full" />
+                      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full">
+                      <img
+                        src="./Images/2.png"
+                        class="w-full max-h-[722px] object-cover" />
+                      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                    <div id="slide3" class="carousel-item relative w-full">
+                      <img
+                        src="./Images/3.png"
+                        class="w-full max-h-[722px] object-cover" />
+                      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                    <div id="slide4" class="carousel-item relative w-full">
+                      <img
+                        src="./Images/4.png"
+                        class="w-full" />
+                      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="bg-[#131318] text-white lg:absolute bottom-5 right-5 w-[100%] lg:w-[700px] p-7 rounded-xl">
+                <h5 class="text-[#ffffffd1] text-2xl font-semibold">Meet all the heroes from the field</h5>
+                <p class="text-[#ffffff92]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+        </section>
+    </header>
+    <main class="md:mx-[10%]">
+<!-- Radial Progres section -->
+        <section class="my-16">
+            <div class="space-y-7">
+                <hr>
+                <div class="text-center space-y-3">
+                    <h2 class="headline">Professional Hockeys Club</h2>
+                    <p class="headline-p">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+                <hr>
+                <div class="flex flex-col gap-5 lg:flex-row justify-evenly">
+                    <div class="flex justify-center flex-col items-center gap-3">
+                        <div
+                            class="radial-progress text-[#FF4240]"
+                            style="--value:87; --size:10rem; --thickness: .8rem;"
+                            role="progressbar">
+                            <span class="text-black font-bold">87%</span>
+                        </div>
+                        <div class="text-center">
+                            <h6 class="text-xl font-semibold py-3">Prayer Facility</h6>
+                            <p class="headline-p lg:px-9">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                        </div>
+                    </div>                
+                    <div class="flex justify-center flex-col items-center gap-3">
+                        <div
+                            class="radial-progress text-[#49D293]"
+                            style="--value:95; --size:10rem; --thickness: .8rem;"
+                            role="progressbar">
+                            <span class="text-black font-bold">95%</span>
+                        </div>
+                        <div class="text-center">
+                            <h6 class="text-xl font-semibold py-3">Experienced Coach</h6>
+                            <p class="headline-p lg:px-9">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                        </div>
+                    </div>                
+                    <div class="flex justify-center flex-col items-center gap-3">
+                        <div
+                            class="radial-progress text-[#FFB546]"
+                            style="--value:87; --size:10rem; --thickness: .8rem;"
+                            role="progressbar">
+                            <span class="text-black font-bold">87%</span>
+                        </div>
+                        <div class="text-center">
+                            <h6 class="text-xl font-semibold py-3">Senior Player</h6>
+                            <p class="headline-p lg:px-9">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center flex-col items-center gap-3">
+                        <div
+                            class="radial-progress text-[#4C8DF1]"
+                            style="--value:80; --size:10rem; --thickness: .8rem;"
+                            role="progressbar">
+                            <span class="text-black font-bold">80%</span>
+                        </div>
+                        <div class="text-center">
+                            <h6 class="text-xl font-semibold py-3">Training Ground</h6>
+                            <p class="headline-p lg:px-9">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- Program section -->
+        <section class="md:mx-[10%] my-16">
+            <div class="space-y-7">
+                <hr>
+                <div class="text-center space-y-3">
+                    <h2 class="headline">Program Sections</h2>
+                    <p class="headline-p">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+                <hr>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div class="text-white relative">
+                        <img src="./Images/2.png" class="w-[100%] h-96 xl:h-auto">
+                        <div class="bg-[#13131884] w-[100%] h-[100%] rounded-xl p-7 flex justify-end gap-5 flex-col absolute top-0 left-0">
+                            <h3 class="text-3xl font-bold">Junior Program</h3>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                            <button class="btn max-w-40 text-white bg-[#FF4240] hover:bg-[#FF4240] border-none">Register Now!</button>
+                        </div>
+                    </div>
+                    <div class="text-white relative">
+                        <img src="./Images/3.png" class="w-[100%] h-96 xl:h-auto">
+                        <div class="bg-[#13131884] w-[100%] h-[100%] rounded-xl p-7 flex justify-end gap-5 flex-col absolute top-0 left-0">
+                            <h3 class="text-3xl font-bold">Teenager Program</h3>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                            <button class="btn max-w-40 text-white bg-[#FF4240] hover:bg-[#FF4240] border-none">Register Now!</button>
+                        </div>
+                    </div>
+                    <div class="text-white relative lg:col-span-2">
+                        <img src="./Images/4.png" class="w-[100%] object-cover h-96 lg:h-auto">
+                        <div class="bg-[#13131884] w-[100%] h-[100%] rounded-xl p-7 flex justify-end gap-5 flex-col absolute top-0 left-0">
+                            <h3 class="text-3xl font-bold">Professional Program</h3>
+                            <p class="md:w-1/2">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                            <button class="btn md:max-w-40 text-white bg-[#FF4240] hover:bg-[#FF4240] border-none">Register Now!</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+<!-- Product Section -->
+        <section class="md:mx-[10%] my-16">
+            <div class="space-y-7">
+                <hr>
+                <div class="text-center space-y-3">
+                    <h2 class="headline">Program Sections</h2>
+                    <p class="headline-p">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+                <hr>
+                <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
+                    <div class="border">
+                        <div class="card p-8 lg:card-side shadow-md gap-5">
+                            <figure class=" bg-slate-300 w-full lg:w-[250px] ">
+                              <img
+                                src="./Images/5.png"/>
+                            </figure>
+                            <div class="space-y-4">
+                                <div class="flex gap-4">
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-solid fa-star text-[#F99808]"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-solid fa-eye font-light"></i>
+                                        <p>250</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-solid fa-heart font-light"></i>
+                                        <p>150</p>
+                                    </div>
+                                </div>
+                                <h2 class="card-title text-2xl font-black">World Cup Flags Football</h2>
+                                <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                                <div class="flex justify-between items-center">
+                                    <p class="text-red-500 font-black text-xl">Price-$22.00</p>
+                                    <div class="flex gap-2">
+                                        <img src="./Images/deliver (1).png">
+                                        <p class="font-light">Delivery Fee : Free</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border">
+                        <div class="card p-8 lg:card-side shadow-md gap-5">
+                            <figure class=" bg-slate-300 w-full lg:w-[250px] ">
+                              <img
+                                src="./Images/6.png"/>
+                            </figure>
+                            <div class="space-y-4">
+                                <div class="flex gap-4">
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-solid fa-star text-[#F99808]"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-solid fa-eye font-light"></i>
+                                        <p>250</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-solid fa-heart font-light"></i>
+                                        <p>150</p>
+                                    </div>
+                                </div>
+                                <h2 class="card-title text-2xl font-black">World Cup Flags Football</h2>
+                                <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                                <div class="flex justify-between items-center">
+                                    <p class="text-red-500 font-black text-xl">Price-$22.00</p>
+                                    <div class="flex gap-2">
+                                        <img src="./Images/deliver (1).png">
+                                        <p class="font-light">Delivery Fee : Free</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border">
+                        <div class="card p-8 lg:card-side shadow-md gap-5">
+                            <figure class=" bg-slate-300 w-full lg:w-[250px] ">
+                              <img
+                                src="./Images/7.png"/>
+                            </figure>
+                            <div class="space-y-4">
+                                <div class="flex gap-4">
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-solid fa-star text-[#F99808]"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-solid fa-eye font-light"></i>
+                                        <p>250</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-solid fa-heart font-light"></i>
+                                        <p>150</p>
+                                    </div>
+                                </div>
+                                <h2 class="card-title text-2xl font-black">Hat for Hockey Player</h2>
+                                <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                                <div class="flex justify-between items-center">
+                                    <p class="text-red-500 font-black text-xl">Price-$22.00</p>
+                                    <div class="flex gap-2">
+                                        <img src="./Images/deliver (1).png">
+                                        <p class="font-light">Delivery Fee : Free</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border">
+                        <div class="card p-8 lg:card-side shadow-md gap-5">
+                            <figure class=" bg-slate-300 w-full lg:w-[250px] ">
+                              <img
+                                src="./Images/8.png"/>
+                            </figure>
+                            <div class="space-y-4">
+                                <div class="flex gap-4">
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-solid fa-star text-[#F99808]"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-solid fa-eye font-light"></i>
+                                        <p>250</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-solid fa-heart font-light"></i>
+                                        <p>150</p>
+                                    </div>
+                                </div>
+                                <h2 class="card-title text-2xl font-black">World Cup Flags Football</h2>
+                                <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                                <div class="flex justify-between items-center">
+                                    <p class="text-red-500 font-black text-xl">Price-$22.00</p>
+                                    <div class="flex gap-2">
+                                        <img src="./Images/deliver (1).png">
+                                        <p class="font-light">Delivery Fee : Free</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border">
+                        <div class="card p-8 lg:card-side shadow-md gap-5">
+                            <figure class=" bg-slate-300 w-full lg:w-[250px] ">
+                              <img
+                                src="./Images/9.png"/>
+                            </figure>
+                            <div class="space-y-4">
+                                <div class="flex gap-4">
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-solid fa-star text-[#F99808]"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-solid fa-eye font-light"></i>
+                                        <p>250</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-solid fa-heart font-light"></i>
+                                        <p>150</p>
+                                    </div>
+                                </div>
+                                <h2 class="card-title text-2xl font-black">World Cup Flags Football</h2>
+                                <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                                <div class="flex justify-between items-center">
+                                    <p class="text-red-500 font-black text-xl">Price-$22.00</p>
+                                    <div class="flex gap-2">
+                                        <img src="./Images/deliver (1).png">
+                                        <p class="font-light">Delivery Fee : Free</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border">
+                        <div class="card p-8 lg:card-side shadow-md gap-5">
+                            <figure class=" bg-slate-300 w-full lg:w-[250px] ">
+                              <img
+                                src="./Images/10.png"/>
+                            </figure>
+                            <div class="space-y-4">
+                                <div class="flex gap-4">
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-solid fa-star text-[#F99808]"></i>
+                                        <p>5.0</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-solid fa-eye font-light"></i>
+                                        <p>250</p>
+                                    </div>
+                                    <div class="flex gap-2 items-center">
+                                        <i class="fa-solid fa-heart font-light"></i>
+                                        <p>150</p>
+                                    </div>
+                                </div>
+                                <h2 class="card-title text-2xl font-black">World Cup Flags Football</h2>
+                                <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                                <div class="flex justify-between items-center">
+                                    <p class="text-red-500 font-black text-xl">Price-$22.00</p>
+                                    <div class="flex gap-2">
+                                        <img src="./Images/deliver (1).png">
+                                        <p class="font-light">Delivery Fee : Free</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+<!-- FAQ section -->
+        <section class="md:mx-[10%] my-16">
+            <div class="space-y-7">
+                <hr>
+                <div class="text-center space-y-3">
+                    <h2 class="headline">Clients Question</h2>
+                    <p class="headline-p">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+                <hr>
+                <div class="border rounded-xl p-5 flex-col xl:flex-row flex gap-7 items-center">
+                    <div class="flex-1">
+                        <img src="./Images/11.png" class=" w-full">
+                    </div>
+                    <div class="w-full space-y-4 flex-1">
+                        <div class="collapse collapse-plus bg-base-200">
+                            <input type="radio" name="my-accordion-3"/>
+                            <div class="collapse-title text-xl font-medium">Our Equipment</div>
+                            <div class="collapse-content">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque placeat velit architecto iusto dolorum inventore corrupti excepturi, quibusdam, repellat et dolorem quasi sapiente blanditiis voluptas, ea tempora hic mollitia voluptates.</p>
+                            </div>
+                          </div>
+                          <div class="collapse collapse-plus bg-base-200">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                            <div class="collapse-content">
+                              <p>hello</p>
+                            </div>
+                          </div>
+                          <div class="collapse collapse-plus bg-base-200">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                            <div class="collapse-content">
+                              <p>hello</p>
+                            </div>
+                          </div>
+                          <div class="collapse collapse-plus bg-base-200">
+                            <input type="radio" name="my-accordion-3"/>
+                            <div class="collapse-title text-xl font-medium">Our Equipment</div>
+                            <div class="collapse-content">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque placeat velit architecto iusto dolorum inventore corrupti excepturi, quibusdam, repellat et dolorem quasi sapiente blanditiis voluptas, ea tempora hic mollitia voluptates.</p>
+                            </div>
+                          </div>
+                          <div class="collapse collapse-plus bg-base-200">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                            <div class="collapse-content">
+                              <p>hello</p>
+                            </div>
+                          </div>
+                          <div class="collapse collapse-plus bg-base-200">
+                            <input type="radio" name="my-accordion-3" />
+                            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                            <div class="collapse-content">
+                              <p>hello</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- Get in touch section -->
+        <section class="md:mx-[10%] my-16">
+            <div class="flex gap-10">
+                <div class="border p-7 space-y-5">
+                    <div class="bg-[#bced6d26] px-7 py-9 rounded-xl">
+                        <img src="./Images/Group 1.png">
+                        <p class="mt-10">Phone Number</p>
+                        <p class="font-bold">01912025223</p>
+                    </div>
+                    <div class="bg-[#fddd5f4b] px-7 py-9 rounded-xl">
+                        <img src="./Images/Group 2.png">
+                        <p class="mt-10">Email</p>
+                        <p class="font-bold">ar.jame333@gamil.com</p>
+                    </div>
+                    <div class="bg-[#629cf38c] px-7 py-9 rounded-xl">
+                        <img src="./Images/Group .png">
+                        <p class="mt-10">Location</p>
+                        <p class="font-bold">Matuail, Jatrabari, Dhaka, Bangladesh</p>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <label class="font-bold text-xl pb-5">Your Name</label>
+                    <input type="text" placeholder="Enter your full name" class="input input-bordered w-full" />
+                </div>
+            </div>
+        </section>
+<!-- Footer first only social media -->
+        <section class="md:mx-[10%] my-16">
+            <div class="text-center bg-[#13131810] space-y-4 py-8 rounded-3xl">
+                <p class="text-2xl font-bold">Social Media</p>
+                <div class="space-x-5 text-2xl">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
+        </section>
+</main>
 </body>
 </html>
