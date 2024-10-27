@@ -494,8 +494,16 @@
             </div>
         </section>
 <!-- Get in touch section -->
-        <section class="md:mx-[10%] my-16">
-            <div class="flex gap-10">
+        <section class="my-16 space-y-7">
+            <div class="space-y-5">
+                <hr>
+                <div class="text-center space-y-4">
+                    <h2 class="headline">Get in touch</h2>
+                    <p class="headline-p">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                </div>
+                <hr>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-10">
                 <div class="border p-7 space-y-5">
                     <div class="bg-[#bced6d26] px-7 py-9 rounded-xl">
                         <img src="./Images/Group 1.png">
@@ -514,13 +522,33 @@
                     </div>
                 </div>
                 <div class="flex-1">
-                    <label class="font-bold text-xl pb-5">Your Name</label>
-                    <input type="text" placeholder="Enter your full name" class="input input-bordered w-full" />
+                    <div class="lg:grid grid-cols-2 grid-rows-5 gap-8">
+                        <div class="space-y-3">
+                            <label class="font-bold text-xl">Your Name</label>
+                            <input type="text" class="input input-bordered w-full p-5 h-[70px] border-none bg-[#13131813]" placeholder="Enter your full name" />    
+                        </div>
+                        <div class="space-y-3">
+                            <label class="font-bold text-xl ">Your Email</label>
+                            <input type="email" class="input input-bordered w-full p-5 h-[70px] border-none bg-[#13131813]"  placeholder="Enter your Email here">
+                        </div>
+                        <div class="space-y-3">
+                            <label class="font-bold text-xl ">Subject</label>
+                            <input type="text" class="input input-bordered w-full p-5 h-[70px] border-none bg-[#13131813]"  placeholder="Enter your subject">
+                        </div>
+                        <div class="space-y-3">
+                            <label class="font-bold text-lg ">Your phone number</label>
+                            <input type="text" class="input input-bordered w-full p-5 h-[70px] border-none bg-[#13131813]"  placeholder="Enter your phone number">
+                        </div>
+                        <div class="space-y-3 col-span-2 row-span-3">
+                            <label class="font-bold text-xl">Message</label>
+                            <textarea class="input input-bordered w-full h-full p-5 border-none bg-[#13131813]" placeholder="Write your message"></textarea>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 <!-- Footer first only social media -->
-        <section class="md:mx-[10%] my-16">
+        <section class="my-16">
             <div class="text-center bg-[#13131810] space-y-4 py-8 rounded-3xl">
                 <p class="text-2xl font-bold">Social Media</p>
                 <div class="space-x-5 text-2xl">
@@ -531,6 +559,43 @@
                 </div>
             </div>
         </section>
-</main>
+    </main>
+<!-- Footer section -->
+    <footer class="">
+        <footer class="footer bg-[#131318] text-white p-20 md:px-[10%]">
+            <aside class="space-y-2">
+                <p class="text-xl font-bold">Get in Touch</p>
+                <p class="w-[350px]">Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+                <div class="flex gap-3 items-center">
+                    <i class="fa-regular fa-envelope"></i>
+                    ar.jame333@gmail.com
+                </div>
+                <div class="flex gap-3 items-center">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>01912025223</p>
+                </div>
+            </aside>
+            <nav>
+              <h6 class="footer-title">Services</h6>
+              <a class="link link-hover">Branding</a>
+              <a class="link link-hover">Design</a>
+              <a class="link link-hover">Marketing</a>
+              <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Company</h6>
+              <a class="link link-hover">About us</a>
+              <a class="link link-hover">Contact</a>
+              <a class="link link-hover">Jobs</a>
+              <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Legal</h6>
+              <a class="link link-hover">Terms of use</a>
+              <a class="link link-hover">Privacy policy</a>
+              <a class="link link-hover">Cookie policy</a>
+            </nav>
+          </footer>
+    </footer>
 </body>
 </html>
